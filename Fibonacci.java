@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Fibonacci {
 
     static void printFibonacci(int upTo) {
@@ -18,8 +20,9 @@ public class Fibonacci {
 
 
     public static void main(String[] args) {
-
-              printFibonacci(100);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the range to print fibonacci series ?");
+              printFibonacci(scan.nextInt());
 
     }
 }
